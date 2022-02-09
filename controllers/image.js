@@ -8,7 +8,8 @@ const handleApiCall = (req, res) => {
     .then(data => {
         res.json(data);
     })
-    .catch(err => res.status(400).json('Unable to call API'));
+    //.catch(err => res.status(400).json('Unable to call API'));
+    .catch(err => res.json());
 }
 
 const handleImage = (req, res, db) => {
